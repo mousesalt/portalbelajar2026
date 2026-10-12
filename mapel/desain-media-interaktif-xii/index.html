@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Semester Ganjil XII DKV: Desain Media Interaktif </title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="portal-topnav"><a href="../../index.html">← Kembali ke Portal Belajar</a></div>
+
+<div class="container">
+    <header>
+        <h1>E-LEARNING PORTAL: Desain Media Interaktif</h1>
+        <p>Program Integrasi Pembelajaran Kelas XII DKV (Kurikulum Merdeka - Semester Ganjil 13 Juli s.d. 31 Desember 2026)</p>
+    </header>
+
+    <!-- Monthly Navigation Tabs -->
+    <div class="month-tabs">
+        <button class="month-btn active" onclick="switchMonth(event, 'juli')">JULI (M1 - M3)</button>
+        <button class="month-btn" onclick="switchMonth(event, 'agustus')">AGUSTUS (M4 - M7)</button>
+        <button class="month-btn" onclick="switchMonth(event, 'september')">SEPTEMBER (M8 - M11)</button>
+        <button class="month-btn" onclick="switchMonth(event, 'oktober')">OKTOBER (M12 - M16)</button>
+        <button class="month-btn" onclick="switchMonth(event, 'november')">NOVEMBER (M17 - M20)</button>
+        <button class="month-btn" onclick="switchMonth(event, 'desember')">DESEMBER (M21 - M24)</button>
+    </div>
+
+        <div id="juli" class="month-content active">        <div class="weekly-layout">            <div class="week-nav">                <button class="week-btn active" onclick="switchWeek(event, 'w1', 'juli')">Minggu 1 (13 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w2', 'juli')">Minggu 2 (20 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w3', 'juli')">Minggu 3 (27 Juli)</button>            </div>            <div class="week-content-wrapper">                <div id="w1" class="week-view active">                    <h2>Minggu 1: Pengenalan Konsep & Klasifikasi Multimedia Interaktif</h2>                    <p><strong>Periode Belajar:</strong> 13 - 19 Juli 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Pengertian & Klasifikasi Multimedia</h3>
+                <p>Multimedia terbagi menjadi dua klasifikasi utama berdasarkan tingkat kontrol pengguna:</p>
+                <ul>
+                    <li><strong>Multimedia Linier:</strong> Berjalan satu arah tanpa kontrol navigasi dari pengguna. Alurnya teratur sekuensial dari awal hingga akhir (contoh: Film, TV) [multimodal_4].</li>
+                    <li><strong>Multimedia Interaktif:</strong> Dilengkapi navigasi yang dioperasikan oleh pengguna secara mandiri untuk mengakses halaman tujuan (contoh: Website, Game) [multimodal_4].</li>
+                </ul>
+                <h3>B. Pola Alur Struktur Navigasi</h3>
+                <ul>
+                    <li><strong>Hierarchical (Berjenjang):</strong> Pengguna diarahkan melalui menu bercabang yang terstruktur.</li>
+                    <li><strong>Non-Linear (Bebas):</strong> Pengguna memiliki akses bebas ke seluruh halaman secara acak [multimodal_4].</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Koneksi Informatika (Berpikir Komputasional):</strong> Penguraian website menjadi halaman-halaman kecil (Dekomposisi) membantu kita merancang alur navigasi yang efisien [passage 117].
+                </div>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-01: Eksplorasi Navigasi Website Lokal</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mengidentifikasi dan memetakan struktur navigasi web.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buka browser dan buka minimal dua website portal berita atau portal pendidikan.</li>
+                    <li>Gambarkan alur menu navigasi dari kedua situs tersebut pada kertas sketsa Anda.</li>
+                    <li>Tentukan apakah situs tersebut menggunakan struktur Hierarchical atau Non-Linear [multimodal_4].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas & Kriteria:</strong> Kirim foto sketsa navigasi Anda ke Google Classroom. Penilaian berdasarkan kerapian visual alur menu.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 1</h4>                        <div class="question">Pertanyaan: Siaran bioskop / film termasuk dalam kategori multimedia apa?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q1" value="A"> A. Multimedia Interaktif</label></li>                            <li><label class="option-label"><input type="radio" name="q1" value="B"> B. Multimedia Linier</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q1', 'B', 'fb1', 'Tepat! Film bioskop ditonton satu arah tanpa interaksi tombol navigasi, dikategorikan sebagai multimedia linier.')">Kirim Jawaban</button>                        <div id="fb1" class="feedback"></div>                    </div>                </div>                <div id="w2" class="week-view">                    <h2>Minggu 2: Alur Navigasi & Simbol Flowchart Standar</h2>                    <p><strong>Periode Belajar:</strong> 20 - 26 Juli 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Simbol Flowchart Standar ANSI/ISO</h3>
+                <p>Sebelum mendesain atau mengode, alur navigasi media interaktif harus digambarkan secara logis dengan flowchart menggunakan simbol-simbol standar [passage 290]:</p>
+                <ul>
+                    <li><strong>Terminator (Oval):</strong> Menandai awal (Start) atau akhir (End) sistem [passage 290].</li>
+                    <li><strong>Process (Persegi):</strong> Menyatakan instruksi internal program [passage 290].</li>
+                    <li><strong>Decision (Belah Ketupat):</strong> Titik percabangan logika bersyarat [passage 290].</li>
+                    <li><strong>Input/Output (Jajaran Genjang):</strong> Pengambilan input user atau menampilkan info [passage 290].</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Koneksi Informatika (Proses Rekayasa):</strong> Pembuatan flowchart alur masuk dalam fase *Analysis & Design* yang krusial sebelum masuk ke tahap pengodean (*Development*) [passage 206].
+                </div>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>B. LKPD-02: Merancang Flowchart Navigasi Profil Diri</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu merancang flowchart alur navigasi web portofolio diri.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buka komputer lab, akses aplikasi draw.io atau Canva.</li>
+                    <li>Buat flowchart dengan simbol standar yang menunjukkan alur dari halaman *Home* ke halaman *Profil*, *Galeri*, dan *Kuis* [passage 290].</li>
+                    <li>Gunakan simbol Decision untuk menunjukkan logika tombol "Kembali ke Beranda" [passage 290].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Ekspor diagram flowchart Anda menjadi PDF/PNG, kumpulkan di folder Google Drive kelas yang disediakan.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 2</h4>                        <div class="question">Pertanyaan: Simbol apa yang digunakan untuk titik awal (Start) atau titik akhir (End) program?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q2" value="A"> A. Proses (Persegi)</label></li>                            <li><label class="option-label"><input type="radio" name="q2" value="B"> B. Terminator (Oval)</label></li>                            <li><label class="option-label"><input type="radio" name="q2" value="C"> C. Decision (Belah Ketupat)</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q2', 'B', 'fb2', 'Benar! Terminator berbentuk Oval digunakan khusus untuk menyatakan awal dan akhir dari alur diagram.')">Kirim Jawaban</button>                        <div id="fb2" class="feedback"></div>                    </div>                </div>                <div id="w3" class="week-view">                    <h2>Minggu 3: Prinsip Desain User Interface (UI/UX) - Harmony & Proportion</h2>                    <p><strong>Periode Belajar:</strong> 27 Juli - 2 Agustus 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Prinsip Desain Antarmuka</h3>
+                <p>Antarmuka media interaktif harus memudahkan pengguna (User Experience) dengan menerapkan prinsip visual [multimodal_10]:</p>
+                <ul>
+                    <li><strong>Harmony (Keselarasan):</strong> Konsistensi gaya grafis, ikon, dan palet warna di semua halaman agar tidak membingungkan [multimodal_10].</li>
+                    <li><strong>Proportion (Kesebandingan):</strong> Ukuran elemen navigasi disesuaikan dengan bidang kerja [multimodal_10].</li>
+                </ul>
+                <h3>B. Ergonomi Tombol Navigasi</h3>
+                <p>Navigasi sentuh membutuhkan ukuran ergonomis agar pas dengan jari manusia [multimodal_10]:</p>
+                <ul>
+                    <li><strong>Smartphone:</strong> Ukuran tombol idealnya berkisar **15-25%** dari luas layar [multimodal_10].</li>
+                    <li><strong>Desktop/PC:</strong> Ukuran tombol berkisar antara **10-20%** dari bidang layar [multimodal_10].</li>
+                </ul>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-03: Pembuatan Wireframe UI Desktop di Figma</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu merancang wireframe layout desktop berdasarkan prinsip proporsi.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buka Figma di PC Lab, buat frame desktop (1920x1080px).</li>
+                    <li>Buat wireframe hitam-putih untuk 3 halaman: Beranda, Materi, dan Kuis.</li>
+                    <li>Tempatkan tombol navigasi menu secara konsisten di area kiri atau atas menggunakan ukuran proporsional (10-20%) [multimodal_10].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Salin link "Share Viewer" proyek Figma Anda, kumpulkan di Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 3</h4>                        <div class="question">Pertanyaan: Berdasarkan prinsip proporsi, berapa kisaran ukuran ideal tombol navigasi pada ponsel layar sentuh?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q3" value="A"> A. 5% - 10%</label></li>                            <li><label class="option-label"><input type="radio" name="q3" value="B"> B. 15% - 25%</label></li>                            <li><label class="option-label"><input type="radio" name="q3" value="C"> C. 35% - 50%</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q3', 'B', 'fb3', 'Hebat! Ukuran 15-25% disesuaikan dengan ergonomi jari agar tidak terjadi kesalahan menekan tombol di layar sentuh.')">Kirim Jawaban</button>                        <div id="fb3" class="feedback"></div>                    </div>                </div>            </div>        </div>    </div>    <div id="agustus" class="month-content">        <div class="weekly-layout">            <div class="week-nav">                <button class="week-btn active" onclick="switchWeek(event, 'w4', 'agustus')">Minggu 4 (3 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w5', 'agustus')">Minggu 5 (10 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w6', 'agustus')">Minggu 6 (17 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w7', 'agustus')">Minggu 7 (24 -)</button>            </div>            <div class="week-content-wrapper">                <div id="w4" class="week-view active">                    <h2>Minggu 4: Manajemen Penggabungan Media & Etika Hak Cipta (HAKI)</h2>                    <p><strong>Periode Belajar:</strong> 3 - 9 Agustus 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Penggabungan Unsur Media</h3>
+                <p>Web interaktif menggabungkan berbagai unsur media (Teks, Gambar, Audio, Video) [multimodal_31]. Sebagai pengembang, kita harus mengoptimalkan ukuran media demi kecepatan web [multimodal_39].</p>
+                <h3>B. Etika & Hak Cipta Digital (HAKI)</h3>
+                <p>Di era digital, kita wajib menghargai karya milik orang lain sesuai aturan hukum di Indonesia [passage 104, 175]:</p>
+                <ul>
+                    <li>Gunakan lisensi <strong>Creative Commons (CCL)</strong> untuk mencari aset legal gratis [passage 178].</li>
+                    <li>Selalu cantumkan kredit atau atribusi sumber orisinal secara jujur [passage 177].</li>
+                    <li>Gunakan kompresi visual agar aset gambar tidak pecah tapi berukuran kecil [multimodal_39].</li>
+                </ul>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-04: Optimasi Ukuran Gambar & Atribusi Aset</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mengompres ukuran gambar dan mendokumentasikan atribusi lisensi.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Cari gambar gratis di Unsplash berlisensi CC0.</li>
+                    <li>Gunakan Adobe Photoshop atau website TinyPNG untuk mengompres resolusinya hingga di bawah 500 KB [multimodal_39].</li>
+                    <li>Buat berkas teks berisi catatan nama pencipta dan link sumber gambar [passage 177].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Unggah gambar yang telah dikompresi beserta dokumen teks atribusinya ke Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 4</h4>                        <div class="question">Pertanyaan: Lisensi apakah yang memudahkan kita menggunakan karya visual secara gratis dan legal di internet?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q4" value="A"> A. All Rights Reserved</label></li>                            <li><label class="option-label"><input type="radio" name="q4" value="B"> B. Creative Commons License (CCL)</label></li>                            <li><label class="option-label"><input type="radio" name="q4" value="C"> C. Commercial License</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q4', 'B', 'fb4', 'Benar! Creative Commons License memandu kita dalam menggunakan aset media secara legal tanpa melanggar hak cipta.')">Kirim Jawaban</button>                        <div id="fb4" class="feedback"></div>                    </div>                </div>                <div id="w5" class="week-view">                    <h2>Minggu 5: Pengenalan Web-Based DMI & Struktur HTML5</h2>                    <p><strong>Periode Belajar:</strong> 10 - 16 Agustus 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Website Sebagai Media Interaktif</h3>
+                <p>Media interaktif berbasis web menyatukan teks, multimedia, dan navigasi melalui perantara web browser [multimodal_31]. Dokumen web diatur menggunakan bahasa markah HTML5.</p>
+                <h3>B. Struktur Dasar Dokumen HTML5</h3>
+                <p>Setiap berkas web wajib memiliki elemen penentu struktur halaman [multimodal_27]:</p>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Mendefinisikan tipe dokumen HTML5 [multimodal_27].</li>
+                    <li><code>&lt;html&gt;</code>: Elemen induk pembungkus seluruh konten [multimodal_27].</li>
+                    <li><code>&lt;head&gt;</code>: Menyimpan metadata dan judul halaman [multimodal_27].</li>
+                    <li><code>&lt;body&gt;</code>: Berisi konten visual yang tampil di layar browser [multimodal_27].</li>
+                </ul>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-05: Membuat Halaman Web HTML Pertama Anda</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu menginstal struktur dasar HTML5 dan menampilkannya di browser.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buka text editor (VS Code / Notepad++) di komputer lab.</li>
+                    <li>Tuliskan struktur dasar dokumen HTML5 [multimodal_27].</li>
+                    <li>Tambahkan tag heading <code>&lt;h1&gt;</code> dan paragraf di dalam tag body.</li>
+                    <li>Simpan berkas dengan nama <code>index.html</code> lalu buka berkas tersebut melalui browser.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kumpulkan screenshot tampilan halaman index.html Anda yang terbuka di browser.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 5</h4>                        <div class="question">Pertanyaan: Tag mana yang menyimpan seluruh konten visual yang akan dilihat oleh pengunjung website?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q5" value="A"> A. <html></label></li>                            <li><label class="option-label"><input type="radio" name="q5" value="B"> B. <head></label></li>                            <li><label class="option-label"><input type="radio" name="q5" value="C"> C. <body></label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q5', 'C', 'fb5', 'Benar! Tag <body> digunakan untuk membungkus seluruh elemen visual seperti gambar, teks, dan tombol.')">Kirim Jawaban</button>                        <div id="fb5" class="feedback"></div>                    </div>                </div>                <div id="w6" class="week-view">                    <h2>Minggu 6: Styling Halaman dengan CSS3 - Selector & Box Model</h2>                    <p><strong>Periode Belajar:</strong> 17 - 23 Agustus 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Konsep Dasar Cascading Style Sheets (CSS)</h3>
+                <p>CSS berfungsi untuk memperindah tampilan visual halaman HTML yang polos [multimodal_25]. Anatomi penulisan aturan CSS terdiri dari tiga komponen utama [multimodal_25]:</p>
+                <ul>
+                    <li><strong>Selector:</strong> Elemen target HTML yang ingin diubah gayanya (contoh: <code>h1</code>) [multimodal_25].</li>
+                    <li><strong>Property:</strong> Atribut tampilan yang ingin diganti (contoh: <code>color</code>) [multimodal_25].</li>
+                    <li><strong>Value:</strong> Nilai perubahan dari atribut tersebut (contoh: <code>blue</code>) [multimodal_25].</li>
+                </ul>
+                <h3>B. Penempatan Kode CSS</h3>
+                <p>Aturan style dapat ditaruh lewat 3 cara: Inline style (langsung di tag), Internal style (di dalam tag <code>&lt;style&gt;</code>), atau External style (file terpisah `.css`) [multimodal_25].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-06: Mengaplikasikan CSS Internal untuk Styling Halaman</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mengganti warna teks, ukuran huruf, dan latar belakang menggunakan CSS.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buka file <code>index.html</code> dari tugas minggu lalu di text editor.</li>
+                    <li>Di dalam tag <code>&lt;head&gt;</code>, sisipkan blok tag <code>&lt;style&gt;</code> [multimodal_25].</li>
+                    <li>Gunakan selector untuk mengganti warna font pada heading 1 menjadi merah dan latar belakang bodi menjadi abu-abu terang [multimodal_25, multimodal_28].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kirimkan source code HTML Anda ke form tugas kelas di Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 6</h4>                        <div class="question">Pertanyaan: Pada kode 'h1 { color: red; }', bagian manakah yang bertindak sebagai Selector?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q6" value="A"> A. h1</label></li>                            <li><label class="option-label"><input type="radio" name="q6" value="B"> B. color</label></li>                            <li><label class="option-label"><input type="radio" name="q6" value="C"> C. red</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q6', 'A', 'fb6', 'Tepat! 'h1' bertindak sebagai Selector, yang mengarahkan target tag HTML mana yang akan dipasangi gaya visual.')">Kirim Jawaban</button>                        <div id="fb6" class="feedback"></div>                    </div>                </div>                <div id="w7" class="week-view">                    <h2>Minggu 7: Layout Web Responsif & Media Queries</h2>                    <p><strong>Periode Belajar:</strong> 24 - 30 Agustus 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Konsep Responsivitas Halaman Web</h3>
+                <p>Website DMI yang baik harus menyesuaikan tampilannya saat dibuka di komputer desktop, tablet, maupun layar handphone [multimodal_26]. Perbedaan dimensi ini dapat dikelola menggunakan fitur CSS3 Media Queries [multimodal_26].</p>
+                <h3>B. Penerapan Media Queries</h3>
+                <p>Media query mendeteksi lebar bidang layar perangkat pengakses lalu menerapkan gaya CSS khusus [multimodal_26]:</p>
+                <pre style="background: #f1f5f9; padding: 10px; border-radius: 4px; font-size:12px;">@media (max-width: 768px) {
+    /* Aturan style khusus untuk smartphone */
+}</pre>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-07: Membuat Grid Responsif Dua Kolom</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu merancang grid CSS yang responsif saat ukuran browser mengecil.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Gunakan tag div pembungkus berkelas <code>grid-container</code>.</li>
+                    <li>Tulis CSS untuk menyusun grid dua kolom berdampingan pada layar desktop.</li>
+                    <li>Tambahkan Media Query agar saat lebar layar di bawah 768px, kolom berubah menumpuk vertikal satu kolom demi kenyamanan baca di ponsel [multimodal_26].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kumpulkan link file HTML Anda (atau screenshot perbandingan desktop vs mobile).
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 7</h4>                        <div class="question">Pertanyaan: Sintaks CSS apa yang digunakan untuk mendeteksi ukuran layar perangkat demi menciptakan web responsif?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q7" value="A"> A. @import</label></li>                            <li><label class="option-label"><input type="radio" name="q7" value="B"> B. @media query</label></li>                            <li><label class="option-label"><input type="radio" name="q7" value="C"> C. @keyframes</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q7', 'B', 'fb7', 'Benar! Fitur @media query di CSS3 berfungsi mendeteksi resolusi dan lebar layar pengakses secara dinamis.')">Kirim Jawaban</button>                        <div id="fb7" class="feedback"></div>                    </div>                </div>            </div>        </div>    </div>    <div id="september" class="month-content">        <div class="weekly-layout">            <div class="week-nav">                <button class="week-btn active" onclick="switchWeek(event, 'w8', 'september')">Minggu 8 (31 Agustus)</button>                <button class="week-btn" onclick="switchWeek(event, 'w9', 'september')">Minggu 9 (7 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w10', 'september')">Minggu 10 (14 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w11', 'september')">Minggu 11 (21 -)</button>            </div>            <div class="week-content-wrapper">                <div id="w8" class="week-view active">                    <h2>Minggu 8: Desain Tombol Navigasi CSS & Hover Effect</h2>                    <p><strong>Periode Belajar:</strong> 31 Agustus - 6 September 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Menghidupkan Navigasi dengan Efek Hover</h3>
+                <p>Untuk memberi umpan balik visual bahwa suatu elemen dapat diklik, desainer web menggunakan selector keadaan semu (pseudo-classes) `:hover` [multimodal_26].</p>
+                <h3>B. Properti Transisi CSS</h3>
+                <p>Gunakan properti <code>transition</code> agar efek perubahan warna atau ukuran tombol berlangsung secara mulus (halus), tidak patah secara instan.</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-08: Mendesain Tombol Navigasi Interaktif</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mendesain tombol navigasi HTML yang responsif terhadap gerakan pointer mouse.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat berkas HTML baru dengan tag tombol link <code>&lt;a class="nav-btn"&gt;Mulai&lt;/a&gt;</code>.</li>
+                    <li>Styling tombol tersebut dengan padding, warna background, border-radius, dan transisi 0.3s [multimodal_26].</li>
+                    <li>Tulis style khusus <code>.nav-btn:hover</code> yang merubah warna background dan sedikit membesarkan ukuran tombol saat pointer melintas.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Ambil rekaman layar singkat (GIF/Video) saat tombol Anda didekati mouse, unggah ke Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 8</h4>                        <div class="question">Pertanyaan: Keadaan semu (pseudo-class) CSS apa yang mendeteksi ketika pointer mouse berada di atas elemen tombol?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q8" value="A"> A. :focus</label></li>                            <li><label class="option-label"><input type="radio" name="q8" value="B"> B. :active</label></li>                            <li><label class="option-label"><input type="radio" name="q8" value="C"> C. :hover</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q8', 'C', 'fb8', 'Tepat sekali! Keadaan :hover dipicu secara otomatis oleh browser ketika kursor mouse melintas di atas elemen target.')">Kirim Jawaban</button>                        <div id="fb8" class="feedback"></div>                    </div>                </div>                <div id="w9" class="week-view">                    <h2>Minggu 9: Integrasi Video & Pengolahan Audio dalam Web</h2>                    <p><strong>Periode Belajar:</strong> 7 - 13 September 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Menyisipkan Elemen Video & Audio HTML5</h3>
+                <p>Website DMI modern sering dilengkapi iringan musik atau presentasi materi video [multimodal_21, multimodal_29]. HTML5 memfasilitasi hal ini secara langsung melalui tag native [multimodal_29]:</p>
+                <ul>
+                    <li><code>&lt;audio src="..." controls&gt;</code>: Menyisipkan pemutar suara [multimodal_29].</li>
+                    <li><code>&lt;video src="..." controls width="..."&gt;</code>: Menyisipkan pemutar video [multimodal_29].</li>
+                </ul>
+                <h3>B. Atribut Kontrol Pemutar</h3>
+                <p>Atribut penting yang dapat diatur meliputi `controls` (menampilkan bar tombol), `autoplay` (jalan otomatis), `loop` (mengulang lagu), dan `preload` [multimodal_30, multimodal_34].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-09: Menyusun Galeri Audio-Video Responsif</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu menyisipkan dan membatasi pemutaran media suara & video pada web.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Siapkan aset video MP4 dan audio MP3 berukuran ringan (<2MB) hasil kompresi di lab.</li>
+                    <li>Tulis script HTML5 untuk menyisipkan video dan audio dengan atribut controls dan loop agar lagu berputar terus secara berulang [multimodal_29, multimodal_30].</li>
+                    <li>Atur lebar bingkai video menggunakan CSS agar selalu sebanding (proportion) dengan layar [multimodal_10].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kirimkan folder proyek (HTML + Aset Media) yang telah di-ZIP ke link kumpul tugas sekolah.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 9</h4>                        <div class="question">Pertanyaan: Atribut apa yang wajib ditambahkan pada tag <audio> agar browser menampilkan tombol Play, Pause, dan Volume?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q9" value="A"> A. loop</label></li>                            <li><label class="option-label"><input type="radio" name="q9" value="B"> B. autoplay</label></li>                            <li><label class="option-label"><input type="radio" name="q9" value="C"> C. controls</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q9', 'C', 'fb9', 'Tepat! Atribut 'controls' menyuruh browser memunculkan panel kendali suara interaktif bawaan bagi pemakai.')">Kirim Jawaban</button>                        <div id="fb9" class="feedback"></div>                    </div>                </div>                <div id="w10" class="week-view">                    <h2>Minggu 10: Evaluasi Desain Web - Parameter Usability</h2>                    <p><strong>Periode Belajar:</strong> 14 - 20 September 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Evaluasi Kegunaan (Usability) Website</h3>
+                <p>Sebelum dipublikasikan, web media interaktif harus lolos evaluasi kualitas [multimodal_36]. Beberapa parameter utama kegunaan meliputi [multimodal_38, multimodal_39]:</p>
+                <ul>
+                    <li><strong>Accessibility:</strong> Kemudahan akses situs dari berbagai macam perangkat maupun koneksi [multimodal_38].</li>
+                    <li><strong>Readability:</strong> Kejelasan teks untuk dibaca dengan nyaman tanpa melelahkan mata [multimodal_39].</li>
+                    <li><strong>Credibility:</strong> Kepercayaan pengguna terhadap kesahihan isi konten dan orisinalitas info [multimodal_40].</li>
+                </ul>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>B. LKPD-10: Penilaian Heuristik Web Teman Sebaya</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mengevaluasi dan memberikan masukan objektif pada antarmuka buatan teman.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Saling bertukar komputer dengan teman sebangku Anda.</li>
+                    <li>Uji coba website interaktif buatan teman Anda dari aspek keterbacaan teks dan kemudahan navigasi tombol [multimodal_39, multimodal_44].</li>
+                    <li>Isi lembar penilaian heuristik berdasarkan kelancaran tombol dan harmonisasi warna [multimodal_10, multimodal_43].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kumpulkan lembar laporan saran perbaikan antarmuka (Heuristic Review) di Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 10</h4>                        <div class="question">Pertanyaan: Aspek kelayakan yang menilai kemudahan membaca teks dan navigasi dalam suatu halaman situs web disebut...</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q10" value="A"> A. Readability</label></li>                            <li><label class="option-label"><input type="radio" name="q10" value="B"> B. Security</label></li>                            <li><label class="option-label"><input type="radio" name="q10" value="C"> C. Performance</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q10', 'A', 'fb10', 'Benar! Readability mengevaluasi ukuran font, tingkat kontras warna teks terhadap latar belakang demi kenyamanan baca.')">Kirim Jawaban</button>                        <div id="fb10" class="feedback"></div>                    </div>                </div>                <div id="w11" class="week-view">                    <h2>Minggu 11: Pengukuran Performansi Web - Speed & Load Time</h2>                    <p><strong>Periode Belajar:</strong> 21 - 27 September 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Pentingnya Kecepatan Load Time</h3>
+                <p>Pengguna cenderung meninggalkan website yang memuat halaman terlalu lama (lemah performa) [multimodal_40]. Kecepatan dipengaruhi oleh cara pengemasan aset gambar/video yang tertanam di halaman web [multimodal_39, multimodal_40].</p>
+                <h3>B. Pengukuran Kecepatan</h3>
+                <p>Alat ukur visual seperti Google PageSpeed Insights membantu kita memantau waktu respons (Response Time) halaman web saat pertama kali diakses [multimodal_40].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-11: Menguji & Mengoptimasi Performansi Web</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mengukur kecepatan render dokumen web dan memotong beban komputasi gambar.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Gunakan fitur 'Inspect Element -> Network' di browser komputer Lab.</li>
+                    <li>Muat ulang halaman website portofolio lokal Anda, catat total ukuran file (KB/MB) dan waktu muatnya (detik).</li>
+                    <li>Lakukan kompresi ulang pada aset gambar yang besar, uji kembali, lalu bandingkan selisih waktu muat barunya [multimodal_39].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Tulis perbandingan performa sebelum vs setelah optimasi gambar dalam format PDF/Word.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 11</h4>                        <div class="question">Pertanyaan: Mengapa kita harus menjaga waktu muat (load time) website serendah mungkin?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q11" value="A"> A. Agar browser tidak mendeteksi kode CSS</label></li>                            <li><label class="option-label"><input type="radio" name="q11" value="B"> B. Agar pengguna merasa nyaman dan tidak jenuh menunggu pemuatan konten</label></li>                            <li><label class="option-label"><input type="radio" name="q11" value="C"> C. Agar kapasitas harddisk server bertambah besar</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q11', 'B', 'fb11', 'Tepat! Kecepatan muat (load time) yang cepat meningkatkan kenyamanan navigasi pemakai (User Experience).')">Kirim Jawaban</button>                        <div id="fb11" class="feedback"></div>                    </div>                </div>            </div>        </div>    </div>    <div id="oktober" class="month-content">        <div class="weekly-layout">            <div class="week-nav">                <button class="week-btn active" onclick="switchWeek(event, 'w12', 'oktober')">Minggu 12 (28 September)</button>                <button class="week-btn" onclick="switchWeek(event, 'w13', 'oktober')">Minggu 13 (5 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w14', 'oktober')">Minggu 14 (12 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w15', 'oktober')">Minggu 15 (19 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w16', 'oktober')">Minggu 16 (26 Oktober)</button>            </div>            <div class="week-content-wrapper">                <div id="w12" class="week-view active">                    <h2>Minggu 12: Evaluasi Tengah Semester (UTS) & Portofolio DMI</h2>                    <p><strong>Periode Belajar:</strong> 28 September - 4 Oktober 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Review Portofolio Desain DMI Tahap I</h3>
+                <p>Minggu ini kita melakukan review menyeluruh terhadap seluruh aset wireframe, flowchart navigasi, serta rancangan HTML & CSS yang telah diselesaikan sejauh ini [passage 214].</p>
+                <div class="highlight-box">
+                    <strong>Konsep Refleksi Belajar:</strong> Siswa diajak bercermin mengenai efisiensi alur desain yang dibuat serta memetakan kendala visual yang dialami selama setengah semester pertama [passage 214].
+                </div>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>B. UTS Praktik: Penyempurnaan Portofolio Web</h3>
+                <p><strong>Tujuan:</strong> Menyelesaikan dan merapikan seluruh halaman web statis agar siap diintegrasikan dengan kode interaktivitas di bab berikutnya.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Koreksi seluruh link mati (broken links) antar halaman HTML Anda.</li>
+                    <li>Pastikan semua aset media gambar/video telah dikompresi di bawah 500 KB dan tata letaknya harmonis di layar desktop [multimodal_10, multimodal_39].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Pengumpulan UTS:</strong> Unggah file ZIP kompilasi seluruh portofolio web statis Anda ke folder Google Classroom UTS.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 12</h4>                        <div class="question">Pertanyaan: Apa fokus evaluasi dalam pengumpulan portofolio web statis tahap pertama ini?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q12" value="A"> A. Menghubungkan basis data eksternal</label></li>                            <li><label class="option-label"><input type="radio" name="q12" value="B"> B. Kerapian struktur HTML, estetika CSS, dan kelancaran link navigasi antar halaman</label></li>                            <li><label class="option-label"><input type="radio" name="q12" value="C"> C. Koneksi hardware robotik</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q12', 'B', 'fb12', 'Benar! Fokus UTS adalah mematangkan fondasi web statis dari aspek kerapian visual, struktur kode, dan navigasi.')">Kirim Jawaban</button>                        <div id="fb12" class="feedback"></div>                    </div>                </div>                <div id="w13" class="week-view">                    <h2>Minggu 13: Pengenalan Logika Pemrograman - Variabel & Tipe Data</h2>                    <p><strong>Periode Belajar:</strong> 5 - 11 Oktober 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Logika Berpikir Komputasional dalam Kode</h3>
+                <p>Untuk membuat media interaktif yang dapat memproses data (seperti kuis atau game), kita harus menyisipkan logika pemrograman komputer [multimodal_3, passage 155].</p>
+                <h3>B. Variabel & Konstanta</h3>
+                <ul>
+                    <li><strong>Variabel:</strong> Wadah penyimpanan data dalam memori komputer yang nilainya dapat berubah selama program berjalan [passage 172]. Ditulis dengan kata kunci <code>var</code> atau <code>let</code> [multimodal_53].</li>
+                    <li><strong>Konstanta:</strong> Wadah penyimpanan data yang nilainya tetap/permanen tidak boleh diubah (kata kunci: <code>const</code>) [multimodal_53].</li>
+                </ul>
+                <h3>C. Tipe Data Dasar</h3>
+                <p>Jenis data meliputi: <code>String</code> (teks), <code>Number</code> (angka/numerik), dan <code>Boolean</code> (nilai logis true/false) [multimodal_53].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>D. LKPD-12: Menulis & Mendeklarasikan Variabel JavaScript</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mendeklarasikan variabel dan menampilkan nilainya di konsol browser.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat berkas HTML baru, sisipkan tag <code>&lt;script&gt;</code> sebelum penutup body.</li>
+                    <li>Tulis baris kode deklarasi nama siswa (String) dan nilai skor (Number) [multimodal_53].</li>
+                    <li>Tampilkan nilai variabel tersebut menggunakan fungsi output <code>console.log()</code>. Buka browser dan inspect konsol Anda [multimodal_51].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Salin baris kode skrip JavaScript deklarasi variabel Anda dan kumpulkan di Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 13</h4>                        <div class="question">Pertanyaan: Tipe data manakah yang tepat digunakan untuk menyimpan teks nama lengkap siswa?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q13" value="A"> A. Number</label></li>                            <li><label class="option-label"><input type="radio" name="q13" value="B"> B. String</label></li>                            <li><label class="option-label"><input type="radio" name="q13" value="C"> C. Boolean</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q13', 'B', 'fb13', 'Luar biasa! Tipe data String bertugas menyimpan barisan karakter teks seperti kalimat atau nama.')">Kirim Jawaban</button>                        <div id="fb13" class="feedback"></div>                    </div>                </div>                <div id="w14" class="week-view">                    <h2>Minggu 14: Struktur Kendali Percabangan (If-Else)</h2>                    <p><strong>Periode Belajar:</strong> 12 - 18 Oktober 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Alur Logika Percabangan Bercabang</h3>
+                <p>Percabangan digunakan untuk mengarahkan alur program ke tujuan yang berbeda berdasarkan kondisi tertentu [passage 290]. Logika ini setara dengan simbol Decision pada flowchart [passage 290].</p>
+                <h3>B. Operator Logika & Perbandingan</h3>
+                <p>Untuk mengevaluasi suatu kondisi, kita menggunakan operator pembanding logis [passage 298]:</p>
+                <ul>
+                    <li><code>==</code> (Sama dengan), <code>!=</code> (Tidak sama dengan)</li>
+                    <li><code>&gt;</code> (Lebih besar), <code>&lt;</code> (Lebih kecil)</li>
+                </ul>
+                <pre style="background: #f1f5f9; padding:10px; border-radius:4px; font-size:12px;">if (skor >= 70) {
+    alert("Selamat, Anda Lulus!");
+} else {
+    alert("Silakan coba kuis kembali.");
+}</pre>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-13: Membuat Program Penentu Kelulusan Kuis</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu menerapkan percabangan If-Else berdasarkan input angka skor siswa.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat berkas HTML dengan input teks boks untuk menerima input nilai dari pengguna.</li>
+                    <li>Tulis fungsi JavaScript yang memeriksa apakah nilai input lebih besar atau sama dengan 75.</li>
+                    <li>Tampilkan pesan kelulusan yang sesuai di layar berdasarkan kondisi pembanding tersebut.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kumpulkan link file HTML program kelulusan Anda di Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 14</h4>                        <div class="question">Pertanyaan: Struktur logika pemrograman apa yang setara dengan simbol belah ketupat (Decision) pada flowchart?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q14" value="A"> A. Loop (Perulangan)</label></li>                            <li><label class="option-label"><input type="radio" name="q14" value="B"> B. If-Else (Percabangan)</label></li>                            <li><label class="option-label"><input type="radio" name="q14" value="C"> C. Array (Struktur Data)</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q14', 'B', 'fb14', 'Benar! Logika If-Else di pemrograman setara dengan simbol Decision belah ketupat di diagram flowchart.')">Kirim Jawaban</button>                        <div id="fb14" class="feedback"></div>                    </div>                </div>                <div id="w15" class="week-view">                    <h2>Minggu 15: Logika Perulangan & Struktur Data Array</h2>                    <p><strong>Periode Belajar:</strong> 19 - 25 Oktober 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Perulangan Logis (Loops)</h3>
+                <p>Looping digunakan untuk mengeksekusi sekumpulan baris kode secara berulang selama kondisi penguji bernilai benar (contoh: <code>for</code>, <code>while</code>) [multimodal_53].</p>
+                <h3>B. Struktur Data Array (Larik)</h3>
+                <p>Array adalah struktur data yang mampu menyimpan sekumpulan nilai/data secara terindeks dalam satu variabel tunggal [passage 176, multimodal_53]:</p>
+                <pre style="background:#f1f5f9; padding:10px; border-radius:4px; font-size:12px;">let daftarMateri = ["Konsep", "UI/UX", "HTML5", "CSS3"];</pre>
+                <div class="highlight-box">
+                    <strong>Koneksi Informatika:</strong> Penguasaan Array memudahkan kita mengolah tumpukan data media tanpa mendeklarasikan banyak variabel terpisah [passage 176].
+                </div>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-14: Menampilkan Daftar Aset Menggunakan Looping</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu membaca dan mencetak isi struktur data Array ke halaman web dengan loop.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Deklarasikan sebuah variabel Array berisi 5 nama gambar latar belakang di lab.</li>
+                    <li>Gunakan struktur perulangan <code>for</code> untuk mengiterasi seluruh indeks data di dalam Array tersebut [multimodal_53].</li>
+                    <li>Tampilkan semua nama gambar tersebut ke dalam list HTML <code>&lt;ul&gt;</code> secara otomatis.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kirimkan file HTML hasil praktik pengolahan array Anda.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 15</h4>                        <div class="question">Pertanyaan: Struktur data apa yang digunakan untuk menyimpan daftar nama file gambar dalam satu variabel terindeks?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q15" value="A"> A. Boolean</label></li>                            <li><label class="option-label"><input type="radio" name="q15" value="B"> B. Array</label></li>                            <li><label class="option-label"><input type="radio" name="q15" value="C"> C. Function</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q15', 'B', 'fb15', 'Hebat! Array digunakan khusus untuk menyimpan himpunan data sejenis secara runtut dalam satu wadah.')">Kirim Jawaban</button>                        <div id="fb15" class="feedback"></div>                    </div>                </div>                <div id="w16" class="week-view">                    <h2>Minggu 16: Modular Coding - Fungsi & Parameter</h2>                    <p><strong>Periode Belajar:</strong> 26 Oktober - 1 November 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Pemrograman Modular Dengan Fungsi (Function)</h3>
+                <p>Fungsi adalah blok kode terisolasi yang dirancang untuk melaksanakan tugas tertentu secara berulang kali [multimodal_53]. Menulis kode dengan fungsi membuat baris program lebih ringkas dan teratur.</p>
+                <h3>B. Parameter & Argumen</h3>
+                <p>Fungsi dapat menerima input berupa parameter untuk diolah di dalamnya lalu mengirimkan hasilnya kembali menggunakan perintah <code>return</code> [multimodal_53].</p>
+                <pre style="background:#f1f5f9; padding:10px; border-radius:4px; font-size:12px;">function sapaPengguna(nama) {
+    return "Halo, Selamat Belajar " + nama;
+}</pre>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-15: Membuat Fungsi Pengubah Latar Belakang</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu merancang fungsi berparameter untuk mengubah properti CSS secara dinamis.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat fungsi berparameter bernama <code>gantiWarnaLatar(warna)</code>.</li>
+                    <li>Di dalam fungsi, tulis instruksi untuk mengganti warna latar belakang halaman body web.</li>
+                    <li>Buat 3 tombol di HTML: "Mode Terang", "Mode Gelap", dan "Mode Sore" yang masing-masing memanggil fungsi tersebut dengan argumen warna yang berbeda saat diklik.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kumpulkan tautan/file HTML halaman yang bisa berubah mode warna latar belakangnya.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 16</h4>                        <div class="question">Pertanyaan: Pernyataan apa yang digunakan di dalam fungsi untuk mengirimkan nilai hasil kembali ke pemanggil?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q16" value="A"> A. return</label></li>                            <li><label class="option-label"><input type="radio" name="q16" value="B"> B. break</label></li>                            <li><label class="option-label"><input type="radio" name="q16" value="C"> C. export</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q16', 'A', 'fb16', 'Benar! Perintah 'return' menyudahi eksekusi fungsi dan melemparkan nilai hasil olahan kembali ke titik pemanggil.')">Kirim Jawaban</button>                        <div id="fb16" class="feedback"></div>                    </div>                </div>            </div>        </div>    </div>    <div id="november" class="month-content">        <div class="weekly-layout">            <div class="week-nav">                <button class="week-btn active" onclick="switchWeek(event, 'w17', 'november')">Minggu 17 (2 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w18', 'november')">Minggu 18 (9 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w19', 'november')">Minggu 19 (16 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w20', 'november')">Minggu 20 (23 -)</button>            </div>            <div class="week-content-wrapper">                <div id="w17" class="week-view active">                    <h2>Minggu 17: Debugging & Penanganan Kesalahan Kode</h2>                    <p><strong>Periode Belajar:</strong> 2 - 8 November 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Mengatasi Masalah Program (Troubleshooting)</h3>
+                <p>Kesalahan atau galat dalam penulisan baris kode pemrograman merupakan hal yang wajar terjadi [multimodal_51]. Kesalahan penulisan skrip secara garis besar dibagi menjadi tiga kategori utama [multimodal_51]:</p>
+                <ul>
+                    <li><strong>Syntax Error:</strong> Pelanggaran tata bahasa kode (seperti kurang tanda penutup kurung atau titik koma) [multimodal_51, multimodal_52].</li>
+                    <li><strong>Logical Error:</strong> Program berjalan lancar tanpa eror sistem namun menghasilkan kalkulasi yang keliru karena salah rumus logika.</li>
+                    <li><strong>Runtime Error:</strong> Terjadi eror saat program dieksekusi di kondisi tertentu (misal memanggil variabel yang belum dibuat).</li>
+                </ul>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>B. LKPD-16: Melakukan Debugging Script Navigasi</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu menganalisis eror compiler pada browser dan menuntaskan perbaikannya [multimodal_51].</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Unduh file JavaScript sengaja eror yang disediakan guru dari folder kelas.</li>
+                    <li>Buka halaman di browser, buka panel 'Console' di menu Developer Tools untuk mengamati baris letak eror compiler [multimodal_51].</li>
+                    <li>Perbaiki tanda baca, sensitivitas huruf (case sensitivity), atau tanda kurung yang hilang agar console bersih dari pesan eror merah [multimodal_51, multimodal_52].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Unggah file JavaScript hasil perbaikan (debugged) yang sudah bebas eror console.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 17</h4>                        <div class="question">Pertanyaan: Jenis kesalahan program apa yang terjadi jika Anda melanggar aturan tata penulisan kode seperti lupa menutup tanda kurung?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q17" value="A"> A. Logical Error</label></li>                            <li><label class="option-label"><input type="radio" name="q17" value="B"> B. Syntax Error</label></li>                            <li><label class="option-label"><input type="radio" name="q17" value="C"> C. Runtime Error</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q17', 'B', 'fb17', 'Benar! Syntax Error terjadi ketika compiler browser mendeteksi adanya pelanggaran tata bahasa penulisan kode.')">Kirim Jawaban</button>                        <div id="fb17" class="feedback"></div>                    </div>                </div>                <div id="w18" class="week-view">                    <h2>Minggu 18: Mekanisme Input Data & Validasi Form</h2>                    <p><strong>Periode Belajar:</strong> 9 - 15 November 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Prinsip GIGO (Garbage In Garbage Out)</h3>
+                <p>Sistem pengolahan data yang andal harus memastikan data yang masuk berkualitas tinggi [passage 189]. Jika data input salah format atau kosong (sampah), maka informasi keluaran juga akan kacau (GIGO) [passage 189, 234].</p>
+                <h3>B. Validasi Form Antarmuka</h3>
+                <p>Validasi form di sisi klien (Client-Side Validation) bertugas menyaring anomali sebelum data diproses [passage 234]:</p>
+                <ul>
+                    <li>Memastikan form tidak kosong saat ditekan submit.</li>
+                    <li>Memvalidasi format email mengandung tanda '@'.</li>
+                    <li>Membatasi input nomor telepon agar hanya menerima karakter angka [passage 188].</li>
+                </ul>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-17: Membuat Form Kontak Dengan Validasi JavaScript</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu membuat form input yang menolak pengiriman jika data kosong atau tidak valid.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat form HTML berisi input Nama, Email, dan Tombol Kirim.</li>
+                    <li>Tulis script JavaScript yang mendeteksi event submit form.</li>
+                    <li>Jika email tidak diisi atau tidak mengandung simbol '@', batalkan pengiriman data form dan munculkan pesan peringatan merah di layar.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kirimkan source code formulir tervalidasi Anda dalam format ZIP.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 18</h4>                        <div class="question">Pertanyaan: Prinsip pengolahan data yang menyatakan bahwa input data berkualitas rendah akan menghasilkan luaran yang salah disebut...</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q18" value="A"> A. Kredibilitas Data</label></li>                            <li><label class="option-label"><input type="radio" name="q18" value="B"> B. GIGO (Garbage In Garbage Out)</label></li>                            <li><label class="option-label"><input type="radio" name="q18" value="C"> C. Data Cleansing</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q18', 'B', 'fb18', 'Tepat! Garbage In Garbage Out (GIGO) menegaskan pentingnya validasi input agar sistem tidak memproses data yang rusak.')">Kirim Jawaban</button>                        <div id="fb18" class="feedback"></div>                    </div>                </div>                <div id="w19" class="week-view">                    <h2>Minggu 19: Penyimpanan Data Lokal & Format JSON</h2>                    <p><strong>Periode Belajar:</strong> 16 - 22 November 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Format Pertukaran Data JSON</h3>
+                <p>JSON (JavaScript Object Notation) adalah format ringan standar yang digunakan untuk bertukar dan menyimpan data antar aplikasi [passage 232].</p>
+                <h3>B. Local Storage Browser</h3>
+                <p>Local Storage memungkinkan website menyimpan data secara lokal langsung di dalam memori web browser klien, sehingga data tidak hilang saat halaman di-refresh [passage 308].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-18: Menyimpan Nama Siswa Menggunakan Local Storage</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu menyimpan dan membaca kembali data teks dari memori lokal browser.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat kolom input nama dan tombol "Simpan Nama".</li>
+                    <li>Gunakan baris kode <code>localStorage.setItem("username", namaInput)</code> untuk mengamankan data ke penyimpanan lokal browser.</li>
+                    <li>Buat instruksi baca <code>localStorage.getItem("username")</code> agar saat halaman dimuat ulang, nama pengguna otomatis tampil di layar.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kirimkan tautan file HTML Anda yang mendemonstrasikan penyimpanan Local Storage.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 19</h4>                        <div class="question">Pertanyaan: Metode JavaScript apa yang digunakan untuk menyimpan nilai data ke dalam Local Storage browser?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q19" value="A"> A. localStorage.getItem()</label></li>                            <li><label class="option-label"><input type="radio" name="q19" value="B"> B. localStorage.setItem()</label></li>                            <li><label class="option-label"><input type="radio" name="q19" value="C"> C. localStorage.clear()</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q19', 'B', 'fb19', 'Benar! localStorage.setItem() digunakan untuk menyimpan data berpasangan key-value ke memori internal browser.')">Kirim Jawaban</button>                        <div id="fb19" class="feedback"></div>                    </div>                </div>                <div id="w20" class="week-view">                    <h2>Minggu 20: Pembuatan Rencana Publikasi & Server Hosting</h2>                    <p><strong>Periode Belajar:</strong> 23 - 29 November 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Mekanisme Kerja Server Hosting & Domain</h3>
+                <p>Agar produk media interaktif web Anda dapat diakses oleh semua orang di seluruh belahan dunia, file HTML/CSS/JS harus ditaruh di dalam komputer server yang terhubung internet terus-menerus (Hosting) [passage 223, 226].</p>
+                <h3>B. Server Cloud & IP Address</h3>
+                <p>Setiap server memiliki IP Address unik. Agar mudah diingat manusia, IP tersebut diarahkan menjadi bentuk nama yang mudah dieja menggunakan sistem DNS (Domain Name System) [passage 226].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-19: Merapikan Aset & Struktur Direktori</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu merapikan struktur folder lokal agar siap diunggah ke server cloud tanpa jalur file yang patah.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Pastikan file utama bernama tepat <code>index.html</code> (menggunakan huruf kecil semua) [multimodal_27].</li>
+                    <li>Satukan seluruh aset gambar ke dalam subfolder <code>/images</code> dan aset CSS ke folder <code>/css</code>.</li>
+                    <li>Ubah link pemanggilan gambar dari absolut lokal menjadi relatif (contoh: <code>images/logo.png</code>) agar aman saat dipindahkan ke server cloud [multimodal_28].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Ambil screenshot struktur folder direktori web Anda yang rapi untuk dinilai kelayakannya sebelum hosting.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 20</h4>                        <div class="question">Pertanyaan: Mengapa file halaman utama website wajib disimpan menggunakan nama berkas 'index.html'?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q20" value="A"> A. Agar ukuran file menjadi lebih kecil</label></li>                            <li><label class="option-label"><input type="radio" name="q20" value="B"> B. Karena index.html merupakan standar berkas beranda yang otomatis dibaca pertama kali oleh web server</label></li>                            <li><label class="option-label"><input type="radio" name="q20" value="C"> C. Agar CSS internal tidak terhapus</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q20', 'B', 'fb20', 'Benar! File 'index.html' adalah standar global yang dicari oleh mesin server web untuk disajikan sebagai halaman beranda utama.')">Kirim Jawaban</button>                        <div id="fb20" class="feedback"></div>                    </div>                </div>            </div>        </div>    </div>    <div id="desember" class="month-content">        <div class="weekly-layout">            <div class="week-nav">                <button class="week-btn active" onclick="switchWeek(event, 'w21', 'desember')">Minggu 21 (30 November)</button>                <button class="week-btn" onclick="switchWeek(event, 'w22', 'desember')">Minggu 22 (7 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w23', 'desember')">Minggu 23 (14 -)</button>                <button class="week-btn" onclick="switchWeek(event, 'w24', 'desember')">Minggu 24 (21 -)</button>            </div>            <div class="week-content-wrapper">                <div id="w21" class="week-view active">                    <h2>Minggu 21: Publikasi Produk Web DMI ke Server Cloud</h2>                    <p><strong>Periode Belajar:</strong> 30 November - 6 Desember 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Tahapan Deployment Produk</h3>
+                <p>Deployment adalah proses mengirimkan dan menyebarluaskan produk digital yang sudah lolos uji di lab lokal agar bisa beroperasi secara langsung di lingkungan internet publik [passage 206].</p>
+                <h3>B. Pilihan Cloud Hosting Gratis</h3>
+                <p>Bagi desainer siswa, tersedia platform cloud hosting gratis yang mumpuni seperti GitHub Pages atau Netlify untuk menayangkan prototipe web portofolio mereka secara instan.</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-20: Mengunggah Situs Web DMI ke GitHub Pages</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mempublikasikan website interaktif ke server internet gratis menggunakan GitHub Pages.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Buat akun di github.com menggunakan email sekolah Anda.</li>
+                    <li>Buat repositori publik baru dengan nama sesuai proyek portofolio Anda.</li>
+                    <li>Unggah seluruh file HTML, CSS, dan folder aset media Anda ke dalam repositori tersebut.</li>
+                    <li>Aktifkan fitur "GitHub Pages" pada menu pengaturan repositori, lalu catat tautan URL publik rilis situs Anda!</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kirimkan tautan URL aktif situs web portofolio Anda yang sudah online ke Google Classroom.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 21</h4>                        <div class="question">Pertanyaan: Proses menayangkan produk teknologi digital dari komputer lokal ke server publik internet agar dapat diakses umum disebut...</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q21" value="A"> A. Debugging</label></li>                            <li><label class="option-label"><input type="radio" name="q21" value="B"> B. Deployment / Publishing</label></li>                            <li><label class="option-label"><input type="radio" name="q21" value="C"> C. Designing</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q21', 'B', 'fb21', 'Benar! Deployment atau rilis publikasi memindahkan file dari tahap pengembangan ke tahap operasional aktif di internet.')">Kirim Jawaban</button>                        <div id="fb21" class="feedback"></div>                    </div>                </div>                <div id="w22" class="week-view">                    <h2>Minggu 22: Pengujian Fungsional & Keamanan Produk (Alpha/Beta Testing)</h2>                    <p><strong>Periode Belajar:</strong> 7 - 13 Desember 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Proses Penyempurnaan Produk (Refinement)</h3>
+                <p>Produk teknologi digital yang sudah diunggah tidak langsung bersifat final, melainkan memerlukan siklus pengujian berulang [passage 208].</p>
+                <h3>B. Alpha & Beta Testing</h3>
+                <ul>
+                    <li><strong>Alpha Testing:</strong> Pengujian internal oleh pembuat sistem sendiri untuk mencari galat logika [passage 216].</li>
+                    <li><strong>Beta Testing:</strong> Uji coba langsung oleh calon pengguna eksternal untuk menilai fungsionalitas dan kegunaan antarmuka [passage 214].</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Refinement:</strong> Perbaikan kecil berdasarkan bug log yang dilaporkan penguji beta sangat penting agar sistem andal saat rilis akhir [passage 206].
+                </div>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>C. LKPD-21: Pengujian Silang & Pencatatan Bug Log</h3>
+                <p><strong>Tujuan:</strong> Siswa mampu mendeteksi kerusakan fungsi link dan kesalahan penulisan kode pada web online.</p>
+                <p><strong>Langkah Kerja Lab:</strong></p>
+                <ol>
+                    <li>Bagikan link website GitHub Pages Anda kepada 3 orang teman sekelas Anda.</li>
+                    <li>Minta mereka mencoba mengisi kuis dan navigasi tombol di situs Anda.</li>
+                    <li>Catat setiap kegagalan fungsi tombol, link patah, atau tampilan yang berantakan pada form Bug Log Anda untuk segera diperbaiki di editor [passage 212, 214].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Tugas:</strong> Kumpulkan berkas lembar Bug Log hasil pengujian silang beserta catatan bukti perbaikannya.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 22</h4>                        <div class="question">Pertanyaan: Pengujian produk yang dilakukan langsung oleh calon pemakai eksternal secara nyata untuk memberikan ulasan kegunaan disebut...</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q22" value="A"> A. Alpha Testing</label></li>                            <li><label class="option-label"><input type="radio" name="q22" value="B"> B. Beta Testing</label></li>                            <li><label class="option-label"><input type="radio" name="q22" value="C"> C. Unit Testing</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q22', 'B', 'fb22', 'Tepat! Beta Testing mengandalkan pengguna riil di luar tim internal pengembang untuk menilai kelayakan produk nyata.')">Kirim Jawaban</button>                        <div id="fb22" class="feedback"></div>                    </div>                </div>                <div id="w23" class="week-view">                    <h2>Minggu 23: Pameran Karya (Exhibition) & Portofolio UAS</h2>                    <p><strong>Periode Belajar:</strong> 14 - 20 Desember 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Persiapan Pameran Proyek Akhir DMI</h3>
+                <p>Minggu ini kita menyusun laporan akhir proses rekayasa produk digital, mendokumentasikan spesifikasi kebutuhan pengguna, alur logika flowchart, serta kompilasi aset media yang disahkan secara jujur [passage 217].</p>
+                <div class="highlight-box">
+                    <strong>Karakter Profil Pancasila:</strong> Melalui presentasi pameran, siswa mengasah kemampuan komunikasi, bernalar kritis, serta bangga memamerkan hasil karya rekayasa mandiri [passage 86, 218].
+                </div>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>B. UAS Day: Gelar Pameran Karya DMI di Lab Komputer</h3>
+                <p><strong>Tujuan:</strong> Menyajikan karya portofolio web interaktif yang telah online di depan guru dan penilai tamu.</p>
+                <p><strong>Aktivitas Lab:</strong></p>
+                <ol>
+                    <li>Buka halaman web GitHub Pages Anda di layar komputer lab masing-masing.</li>
+                    <li>Sajikan demo interaktivitas form kuis dan uji kelancaran tombol navigasi di depan penguji [passage 217].</li>
+                    <li>Tunjukkan keselarasan prinsip proporsi tombol dan optimalisasi aset media [multimodal_10, multimodal_39].</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Penilaian UAS:</strong> Portofolio proyek dinilai menggunakan rubrik komprehensif (struktur kode, fungsionalitas interaktivitas, dan keselarasan UI/UX) [passage 218].
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 23</h4>                        <div class="question">Pertanyaan: Dokumentasi apa saja yang wajib dilampirkan dalam laporan akhir proyek portofolio UAS?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q23" value="A"> A. Hanya struk pembelian komputer</label></li>                            <li><label class="option-label"><input type="radio" name="q23" value="B"> B. Dokumen analisis kebutuhan pengguna, diagram flowchart, print screen wireframe, tautan URL rilis hosting, serta refleksi belajar</label></li>                            <li><label class="option-label"><input type="radio" name="q23" value="C"> C. Hanya kartu garansi hosting</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q23', 'B', 'fb23', 'Luar biasa! Dokumen rekayasa lengkap memberikan rekam jejak sistematis alur rekayasa produk dari perencanaan hingga peluncuran.')">Kirim Jawaban</button>                        <div id="fb23" class="feedback"></div>                    </div>                </div>                <div id="w24" class="week-view">                    <h2>Minggu 24: Evaluasi Akhir, Remedial, & Refleksi Semester Ganjil</h2>                    <p><strong>Periode Belajar:</strong> 21 - 27 Desember 2026</p>                    <div class="day-grid">                        <div class="day-card wednesday">                            <div>                                <span class="badge-day">Rabu: Teori Kelas (4 JP)</span>                                
+                <h3>A. Sesi Refleksi Hasil Belajar Semester Ganjil</h3>
+                <p>Di penghujung semester ini, saatnya mengevaluasi perkembangan pemahaman logika computational dan kompetensi keahlian desain media interaktif Anda [passage 214].</p>
+                <p>Gunakan kesempatan ini untuk memahami kelebihan kompetensi diri dan menetapkan target pengembangan diri yang lebih menantang di semester genap [passage 215].</p>
+                                        </div>                        </div>                        <div class="day-card thursday">                            <div>                                <span class="badge-day">Kamis: Praktik Lab (4 JP)</span>                                
+                <h3>B. Sesi Pengayaan & Remedial Lab Komputer</h3>
+                <p><strong>Aktivitas Sesi:</strong></p>
+                <ol>
+                    <li>Siswa yang nilai portofolionya telah melampaui KKM dipasangkan untuk membimbing teman sebaya (peer tutoring).</li>
+                    <li>Siswa yang memerlukan remedial diberikan bimbingan perbaikan kode program atau pengaturan tata letak CSS yang masih patah [multimodal_51].</li>
+                    <li>Penyelesaian administrasi nilai akhir semester ganjil.</li>
+                </ol>
+                <div class="assignment-box">
+                    <strong>Refleksi Akhir:</strong> Tulis kesan dan pembelajaran paling bermakna yang Anda peroleh selama menempuh kelas integrasi Informatika DMI ini di lembar refleksi online.
+                </div>
+                                        </div>                        </div>                    </div>                    <div class="quiz-section">                        <h4>Kuis Mandiri Minggu 24</h4>                        <div class="question">Pertanyaan: Apa esensi dari proses penutupan belajar melalui refleksi di akhir semester?</div>                        <ul class="options-list">                            <li><label class="option-label"><input type="radio" name="q24" value="A"> A. Menghapus seluruh file portofolio secara permanen</label></li>                            <li><label class="option-label"><input type="radio" name="q24" value="B"> B. Mengevaluasi strategi belajar mandiri, merayakan pencapaian, dan merumuskan langkah perbaikan diri ke depan</label></li>                            <li><label class="option-label"><input type="radio" name="q24" value="C"> C. Mengulang kembali pelajaran dari kelas X</label></li>                        </ul>                        <button class="btn" onclick="checkAnswer('q24', 'B', 'fb24', 'Tepat sekali! Refleksi mandiri menumbuhkan kemampuan pemantauan belajar mandiri (Self-Regulated Learning) untuk peningkatan kapasitas diri.')">Kirim Jawaban</button>                        <div id="fb24" class="feedback"></div>                    </div>                </div>            </div>        </div>    </div>
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

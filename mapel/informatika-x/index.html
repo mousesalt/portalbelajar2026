@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Informatika Kelas X DKV</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="portal-topnav"><a href="../../index.html">← Kembali ke Portal Belajar</a></div>
+
+<div class="container">
+    <header>
+        <h1>PORTAL BELAJAR INFORMATIKA (FASE E) - KELAS X DKV</h1>
+        <p>Silabus &amp; Aktivitas Pembelajaran Terpadu | Semester Ganjil 2026 (Juli - Desember)</p>
+        <p>Jadwal Kelas: Rabu (Teori di Kelas - 4 JP) &amp; Kamis (Praktik Mandiri Lab - 4 JP)</p>
+    </header>
+
+    <!-- Month Navigation (Top Level) -->
+    <div class="month-tabs">
+        <button class="month-btn active" onclick="switchMonth(event, 'juli')">Juli</button>
+        <button class="month-btn" onclick="switchMonth(event, 'agustus')">Agustus</button>
+        <button class="month-btn" onclick="switchMonth(event, 'september')">September</button>
+        <button class="month-btn" onclick="switchMonth(event, 'oktober')">Oktober</button>
+        <button class="month-btn" onclick="switchMonth(event, 'november')">November</button>
+        <button class="month-btn" onclick="switchMonth(event, 'desember')">Desember</button>
+    </div>
+
+    <div class="main-layout">
+        <!-- Week Sidebar (Second Level) -->
+        <div class="week-sidebar" id="week-sidebar">
+            <!-- Dynamically populated by JS based on selected month -->
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area" id="content-area">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
